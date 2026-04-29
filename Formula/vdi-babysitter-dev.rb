@@ -68,7 +68,7 @@ class VdiBabysitterDev < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python@3.12")
+    venv = virtualenv_create(libexec, "python3.12")
 
     resources.each do |r|
       if r.name == "playwright"
