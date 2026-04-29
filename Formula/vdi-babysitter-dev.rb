@@ -68,7 +68,17 @@ class VdiBabysitterDev < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python@3.12")
+
+    resources.each do |r|
+      if r.name == "playwright"
+        r.stage { venv.pip_install Dir["*.whl"].first }
+      else
+        r.stage { venv.pip_install r.cached_download }
+      end
+    end
+
+    venv.pip_install_and_link buildpath
   end
 
   def caveats
