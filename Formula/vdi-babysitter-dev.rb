@@ -4,7 +4,7 @@ class VdiBabysitterDev < Formula
   desc "CLI tool for automating VDI session management (Citrix) — latest dev build"
   homepage "https://github.com/punitlad/vdi-babysitter"
   url "https://github.com/punitlad/vdi-babysitter/archive/refs/tags/latest-dev.tar.gz"
-  sha256 "498796dbb493b742987986aa07929e269c13c372f1b6193c960e401751d5011b"
+  sha256 "4dd52741999880c5886d69ccae5402f6a7b137db14f7cd6af58a8a89e1022473"
   version "dev"
   license "MIT"
 
