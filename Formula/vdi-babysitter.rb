@@ -7,6 +7,7 @@ class VdiBabysitter < Formula
   sha256 "REPLACE_WITH_SHA256_AT_RELEASE"
   license "MIT"
 
+  depends_on "libyaml"
   depends_on "python@3.12"
 
   # playwright dependencies
