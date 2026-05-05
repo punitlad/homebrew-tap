@@ -72,11 +72,7 @@ class VdiBabysitterDev < Formula
     venv = virtualenv_create(libexec, "python3.12")
 
     resources.each do |r|
-      if r.name == "playwright"
-        r.stage { venv.pip_install Dir["*.whl"].first }
-      else
-        r.stage { venv.pip_install r.cached_download }
-      end
+      r.stage { venv.pip_install Dir["*.whl"].first }
     end
 
     venv.pip_install_and_link buildpath
