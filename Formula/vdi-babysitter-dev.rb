@@ -63,6 +63,26 @@ class VdiBabysitterDev < Formula
     sha256 "7ecfff8f2fd72616f7481040475a65b2bf8af90a56c89140852d1120324e8686"
   end
 
+  resource "pygments" do
+    url "https://files.pythonhosted.org/packages/py3/p/pygments/pygments-2.19.2-py3-none-any.whl"
+    sha256 "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b"
+  end
+
+  resource "markdown-it-py" do
+    url "https://files.pythonhosted.org/packages/py3/m/markdown_it_py/markdown_it_py-4.0.0-py3-none-any.whl"
+    sha256 "87327c59b172c5011896038353a81343b6754500a08cd7a4973bb48c6d578147"
+  end
+
+  resource "mdurl" do
+    url "https://files.pythonhosted.org/packages/py3/m/mdurl/mdurl-0.1.2-py3-none-any.whl"
+    sha256 "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"
+  end
+
+  resource "annotated-doc" do
+    url "https://files.pythonhosted.org/packages/py3/a/annotated_doc/annotated_doc-0.0.4-py3-none-any.whl"
+    sha256 "571ac1dc6991c450b25a9c2d84a3705e2ae7a53467b5d111c24fa8baabbed320"
+  end
+
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/py3/a/annotated_types/annotated_types-0.7.0-py3-none-any.whl"
     sha256 "1f02e8b43a8fbbc3f3e0d4f0f4bfc8131bcb4eebe8849b8e5c773f3a1c582a53"
