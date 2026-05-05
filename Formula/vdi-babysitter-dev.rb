@@ -4,8 +4,8 @@ class VdiBabysitterDev < Formula
   desc "CLI tool for automating VDI session management (Citrix) — latest dev build"
   homepage "https://github.com/punitlad/vdi-babysitter"
   url "https://github.com/punitlad/vdi-babysitter/archive/refs/tags/latest-dev.tar.gz"
-  sha256 "4dd52741999880c5886d69ccae5402f6a7b137db14f7cd6af58a8a89e1022473"
   version "dev"
+  sha256 "4dd52741999880c5886d69ccae5402f6a7b137db14f7cd6af58a8a89e1022473"
   license "MIT"
 
   depends_on "python@3.12"
@@ -31,6 +31,7 @@ class VdiBabysitterDev < Formula
     sha256 "1a54a921561dd9518d31d2d3db4d7f80e589083063ab4d3e2e950756ef809e1a"
   end
 
+  depends_on "libyaml"
   resource "pyyaml" do
     on_arm do
       url "https://files.pythonhosted.org/packages/cp312/p/pyyaml/pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl"
