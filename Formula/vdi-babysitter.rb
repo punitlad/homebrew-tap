@@ -97,14 +97,8 @@ class VdiBabysitter < Formula
     venv.pip_install_and_link buildpath
   end
 
-  def caveats
-    <<~EOS
-      vdi-babysitter requires Chromium browser binaries for Playwright.
-      After installation, run:
-        vdi-babysitter-playwright install chromium
-      Or manually:
-        #{opt_libexec}/bin/playwright install chromium
-    EOS
+  def post_install
+    system libexec/"bin/playwright", "install", "chromium"
   end
 
   test do
