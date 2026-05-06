@@ -95,10 +95,14 @@ class VdiBabysitterDev < Formula
       r.stage { venv.pip_install Dir["*.whl"].first }
     end
 
-    venv.pip_install_and_link buildpath
+    venv.pip_install buildpath
+
+    (bin/"vdi-babysitter").write_env_script libexec/"bin/vdi-babysitter",
+      VDIBABYSITTER_PLAYWRIGHT_BROWSER_PATH: opt_libexec/"ms-playwright"
   end
 
   def post_install
+    ENV["VDIBABYSITTER_PLAYWRIGHT_BROWSER_PATH"] = "#{opt_libexec}/ms-playwright"
     system libexec/"bin/playwright", "install", "chromium"
   end
 
