@@ -3,8 +3,8 @@ class VdiBabysitter < Formula
 
   desc "CLI tool for automating VDI session management (Citrix)"
   homepage "https://github.com/punitlad/vdi-babysitter"
-  url "https://github.com/punitlad/vdi-babysitter/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "REPLACE_WITH_SHA256_AT_RELEASE"
+  url "https://github.com/punitlad/vdi-babysitter/archive/refs/tags/v.0.1.1.tar.gz"
+  sha256 "57721e5fb1a580db4a63a182261d32fa1ddefe9b382f4efc59ad5333742afd59"
   license "MIT"
 
   depends_on "libyaml"
