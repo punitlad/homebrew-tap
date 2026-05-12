@@ -102,7 +102,7 @@ class VdiBabysitterDev < Formula
   end
 
   def post_install
-    ENV["VDIBABYSITTER_PLAYWRIGHT_BROWSER_PATH"] = "#{opt_libexec}/ms-playwright"
+    ENV["PLAYWRIGHT_BROWSERS_PATH"] = "#{opt_libexec}/ms-playwright"
     system libexec/"bin/playwright", "install", "chromium"
   end
 
