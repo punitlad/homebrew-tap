@@ -11,4 +11,4 @@ brew install "punitlad/tap/${FORMULA}"
 
 echo ""
 echo "==> Smoke test (${FORMULA})"
-"${HOMEBREW_PREFIX}"/bin/vdi-babysitter --help
+"${HOMEBREW_PREFIX:?}"/bin/vdi-babysitter --help
