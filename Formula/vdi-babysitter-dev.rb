@@ -5,7 +5,7 @@ class VdiBabysitterDev < Formula
   homepage "https://github.com/punitlad/vdi-babysitter"
   url "https://github.com/punitlad/vdi-babysitter/releases/download/latest-dev/vdi_babysitter-0.1.0.tar.gz"
   version "dev"
-  sha256 "bde2f1147106a5b4afc682e479faad902fa0ffd6303e3e429f60510bb6dd049d"
+  sha256 "e0d7a1832b8584392d5b05d10a913592afc754d31a2cea930429389b2042cba7"
   license "MIT"
 
   depends_on "libyaml"
