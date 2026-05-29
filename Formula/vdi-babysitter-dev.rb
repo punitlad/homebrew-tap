@@ -3,9 +3,7 @@ class VdiBabysitterDev < Formula
 
   desc "CLI tool for automating VDI session management (Citrix) — latest dev build"
   homepage "https://github.com/punitlad/vdi-babysitter"
-  url "https://github.com/punitlad/vdi-babysitter/releases/download/latest-dev/vdi_babysitter-0.1.0.tar.gz"
-  version "dev"
-  sha256 "e0d7a1832b8584392d5b05d10a913592afc754d31a2cea930429389b2042cba7"
+  head "https://github.com/punitlad/vdi-babysitter.git", branch: "main"
   license "MIT"
 
   depends_on "libyaml"
@@ -108,8 +106,8 @@ class VdiBabysitterDev < Formula
 
   def caveats
     <<~EOS
-      This is a rolling dev build — reinstall to get the latest:
-        brew reinstall vdi-babysitter-dev
+      This is a rolling dev build — reinstall to get the latest commits:
+        brew reinstall --HEAD vdi-babysitter-dev
     EOS
   end
 
